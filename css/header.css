@@ -12,7 +12,6 @@ body {
 header {
     position: relative;
     top: 0;
-    background-color: rgb(0 0 0 / 76%);
     display: grid;
     height: 90px;
 }
@@ -23,6 +22,8 @@ header nav {
     align-items: center;
     justify-content: center;
     height: inherit;
+    background-color: rgb(0 0 0 / 76%);
+    filter: drop-shadow(0 3px 8px rgb(54, 121, 165));
 }
 
 
