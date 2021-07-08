@@ -8,41 +8,57 @@
     color: white;
     margin-top: 0.8rem;
 
+
 }
 ul li{
-    display:inline-flex;
+    display:flex;
     text-align: center;
+
+    
+}
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 8rem;
     
 }
 header{
-    background-color: grey;
+
     height:8rem;
     text-align: center;
-    opacity:0.2;
+
 }
 #logo{
     border: solid 0.2rem  white;
-    padding: 0.5rem;
+    padding: 1.2rem 0.5rem;
     font-size: 1.5rem;
     text-align: center;
     letter-spacing: 2px;
-    clear:both;
     margin: 0 2.5rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
     color: white;
 }
 #background{
     
     background-size: cover;
-
+    background-image:url('../Image/Homepagebackground.jpg');
+    height: 1000px;
 
 }
-#div1 #div2{
-    background-image:url('https://static1.bigstockphoto.com/9/6/1/large1500/169760120.jpg');
-    position: relative;
-    height: 895px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top center;
 
+#backgroundcolor{
+    background-color: grey;
+    height:8rem;
+    opacity:0.75;
+    position: relative;
+}
+header nav{
+    position: absolute;
+    top: -1rem;
+
+    margin:0 2%;
+    width: 100%;
 }
