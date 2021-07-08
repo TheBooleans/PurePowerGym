@@ -1,48 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
 *{
     box-sizing: border-box;
 }
 
-.navlist{
-    
-    margin: 0 2.5rem;
-    color: white;
-    margin-top: 0.8rem;
+body {
+    margin: 0 auto;
+}
 
-}
-ul li{
-    display:inline-flex;
-    text-align: center;
-    
-}
-header{
-    background-color: grey;
-    height:8rem;
-    text-align: center;
-    opacity:0.2;
-}
-#logo{
-    border: solid 0.2rem  white;
-    padding: 0.5rem;
-    font-size: 1.5rem;
-    text-align: center;
-    letter-spacing: 2px;
-    clear:both;
-    margin: 0 2.5rem;
-    margin-top: 2rem;
-    color: white;
-}
-#background{
-    
-    background-size: cover;
-
-
-}
-#div1 #div2{
-    background-image:url('https://static1.bigstockphoto.com/9/6/1/large1500/169760120.jpg');
+header {
     position: relative;
-    height: 895px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top center;
+    top: 0;
+    background-color: rgb(0 0 0 / 76%);
+    display: grid;
+    height: 90px;
+}
 
+header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+}
+
+
+
+ul#leftUL {
+    display: flex;
+    margin: 0 0;
+    padding: 0 0;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 30%;
+    flex-direction: row;
+    height: inherit;
+}
+
+
+ul#rightUL {
+    display: flex;
+    margin: 0 0;
+    padding: 0 0;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 30%;
+    flex-direction: row;
+    height: inherit;
+}
+
+
+
+
+img {
+    width: 264px;
+    filter: drop-shadow(1px 3px 3px black);
+}
+
+li.navlist {
+    list-style: none;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: x-large;
+    color: lightgray;
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+li.navlist:hover{
+    background-color: rgb(112, 112, 112);
+    border-right: solid;
+    border-left: solid;
+}
+
+
+
+header div#background {
+    background-image: url("../Image/wallpaperflare.com_wallpaper\(8\).jpg");
+    position: fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-repeat: no-repeat;
+}
+
+header div#background::after {
+    content: "";
+    background: #131313;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 0.5;
 }
