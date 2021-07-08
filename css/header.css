@@ -73,9 +73,9 @@ li.navlist {
 }
 
 li.navlist:hover{
-    background-color: rgb(112, 112, 112);
-    border-right: solid;
-    border-left: solid;
+    background: linear-gradient(to bottom, #26b0cc 0%,#26b0cc 0%,#134a63 0%,#134a63 0%,#207cca 100%,#207cca 100%,#7db9e8 100%);
+    border-right: solid rgba(54, 121, 165, 0.62);
+    border-left: solid rgba(54, 121, 165, 0.62);
 }
 
 
