@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+}
+
+.navlist{
+    
+    margin: 0 2.5rem;
+    color: white;
+    margin-top: 0.8rem;
+
+}
+ul li{
+    display:inline-flex;
+    text-align: center;
+    
+}
+header{
+    background-color: grey;
+    height:8rem;
+    text-align: center;
+    opacity:0.2;
+}
+#logo{
+    border: solid 0.2rem  white;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+    letter-spacing: 2px;
+    clear:both;
+    margin: 0 2.5rem;
+    margin-top: 2rem;
+    color: white;
+}
+#background{
+    
+    background-size: cover;
+
+
+}
+#div1 #div2{
+    background-image:url('https://static1.bigstockphoto.com/9/6/1/large1500/169760120.jpg');
+    position: relative;
+    height: 895px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+
+}
