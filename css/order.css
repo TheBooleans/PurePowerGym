@@ -1,0 +1,110 @@
+*{box-sizing: border-box;}
+body{
+    background-image: url(https://www.moneycrashers.com/wp-content/uploads/2018/03/things-always-buy-online.jpg);
+    background-size:cover;
+}
+#order{
+
+    margin-top: 6.5rem;
+    border-width:10px;
+    padding: 10px;
+    padding-bottom:60px;
+    font-size: 2.5rem;
+    height: 1.1rem;
+    width: 34rem ;
+    text-align: center;
+    color: #056a96;
+    margin-left: 34rem;
+    margin-bottom: 1rem;
+    margin-right: 36rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border-style: ridge;
+    border-collapse: collapse;
+    border-radius:  20px;
+    background-color:rgba(49, 96, 158, 0.747);
+    color: rgb(25, 25, 53);
+    border-color: rgba(129, 215, 226, 0.74);
+   
+    
+}
+form{
+    height: 500px;;
+    padding: 10px;
+    background-color: #1d6483d2   ;
+    font-size:larger;
+    color:#21282c    ;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    
+    border: outset;
+    border-color: powderblue;
+    border-radius: 70px;
+     
+    
+
+}
+input{
+    border:inset;
+    border: inset;
+    border-radius: 15px;
+    border-color:lightskyblue  ;
+    background-color:#e9eef0    ;
+
+    margin: 15px;
+    font-size: x-large;
+    block-size: 50px;
+
+    
+    
+
+}
+
+
+label{
+    font-size:2.2rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin: 15px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder , 
+    
+    
+    
+; 
+}
+#fname{
+    margin-left: 4.3rem;
+}
+#email{
+    width:35rem;
+    margin-left: 8.2rem;
+}
+#phone{
+    width: 15rem;
+    margin-left: -.1rem;
+}
+#country{
+    margin-left: 6.5rem;
+}
+#city{
+    margin-left: 10.2rem;
+}
+#cridet{
+    margin-left: -3.8rem;
+}
+#cvc{width:5rem ;}
+
+.submit{
+    padding-left: 35rem;
+    
+}
+#submit{
+    background-color:#428baa ;
+    font-size: 2.3rem;
+    width: 10rem;
+    font-family:Arial, Helvetica, sans-serif ;
+    }
+    
+    
