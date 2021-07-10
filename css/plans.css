@@ -1,6 +1,6 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Yomogi&display=swap');
 #background1 {
-    background-image: url(https://media.discordapp.net/attachments/863170205836378113/863172633905856552/sports-nutrition-supplements-healthy-food-dumbbells-black-background-fitness-bodybuilding-sport-heal.jpg);
+    background-image: url(https://image.freepik.com/free-photo/healthy-lifestyle-food-sport-concept-white-wooden-background_53476-3742.jpg);
     background-size: cover;
     height: 58rem;
     width: 105%;
@@ -12,192 +12,35 @@
 #p1 {
     position: absolute;
     font-size: xx-large;
-    width: 34%;
-    top: 10%;
-    left: 6%;
+    /* width: 34%; */
+    top: 50%;
+    left: 24%;
     color: white;
-    font-family: 'Zen Tokyo Zoo', cursive;
+    font-family: 'Yomogi', cursive;
     font-size: 10rem;
+    
 }
 
-/* .collapsible {
-    background-color: black;
-    color: white;
-    cursor: pointer;
-    padding: 18px;
-    width: 20%;
-    border: none;
-    text-align: center;
-    outline: none;
-    font-size: 2rem;
-    margin-bottom: 3rem;
-    margin-top: 3rem;
-    display: list-item;
- margin-left: 7rem;
- margin-right: 4rem;
- 
- font-family: 'Paytone One', sans-serif;
-    
-    
-    
- }
-  
-.active, .collapsible:hover {
-    background-color: blue;
-  }
-  
-  .content {
-    padding: 0 1rem;
-    display: none;
-    overflow: hidden;
-    background-color: black;
-    color: white;
-    margin-left: 20rem;
-    margin-right: 20rem;
-    font-family: 'Belgrano', serif;
-   
-  } */
-   /* section {
-    min-height: 100vh;
-    display: grid;
-    place-items: center;
-    background-image: radial-gradient(rgb(8, 8, 20), rgb(28, 6, 78));
-    color: #fff;
-    font-size: 18px;
-    padding: 1em;
-    line-height: 1.5;
-  }
-  
-  .cards {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .card {
-    padding-top: 10em;
-    max-width: 400px;
-    position: relative;
-    transition: transform 200ms;
-    transition: 200ms; }
-  
-  .card:before,
-  .card:after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background-size: cover;
-      z-index: -1;
-    }
-  
-    .card:before {
-      transition: transform 300ms;
-      background-image: var(--img);
-    }
-  
-    .card:after {
-      background: var(--clr);
-      opacity: 0;
-      mix-blend-mode: multiply;
-  
-      transition: opacity 300ms;
-    }
-  
-  
-  .card-content {
-    overflow: hidden;
-    padding: 1em 1em;
-    
-  }
-  
-  .card-title {
-    padding-bottom: 0.3em;
-    text-transform: capitalize;
-    font-size: 1.6em;
-    font-weight: bold;
-  }
-  
-  .card-text::first-letter {
-    font-size: 1.8em;
-    color: yellow;
-  } 
-   /* .card-content{
-    display: none;
-  }
-  .cards:hover ~ .card-content{
-    display: inline-block
-     
-   }  */
-  /* .card-title,
-  .card-text {
-    transform: translateY(100px);
-    opacity: 0;
-    transition-property: transform, opacity;
-    transition-duration: 300ms;
-  }
-  
-  .card-title {
-    transition-delay: 200ms;
-  }
-  
-  .cards:hover .card {
-    filter: grayscale(1);
-  }
-  
-   .card:hover {
-    filter: blur(0) !important;
-  }
-  .card {
-    --y: 10%;
-    transform: translateX(10%) translateY(10%) scale(0.9);
-  }
-  
-  .card:hover:after {
-      opacity: 1;
-    }
-  
-  .card:hover:before {
-      transform: scale(1.1);
-    }
-  
-    .card-text,
-    .card-title {
-      opacity: 1;
-      transform: none;
-    }
-  
-    .card-title {
-      transition-delay: 0;
-    }
-  
-    .card-text {
-      transition-delay: 400ms;
-    } 
-   */
    body {
-    min-height: 100vh;
-    /* background-image: radial-gradient(#080814, #1c064e); */
+    
     color: #fff;
-    font-size: 18px;
-    padding: 1em;
-    line-height: 1.5;
-    margin: 0 auto;
-    background: linear-gradient(304deg,black, transparent);
-    /* background-image: url(https://i2.wp.com/backgroundcheckall.com/wp-content/uploads/2017/12/background-gym-6.jpg); */
+    
+    background-image: url(https://i.pinimg.com/564x/a4/96/7a/a4967a1cdba89df8d32804ea250d7250.jpg) ;
+      
    }
-  #w{
+  #part1{
     display: flex;
     flex-direction: column;
     width: 100%;
     justify-content: center;
     margin: 4% 0;
-
+    
   }
+
   .cards {
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
-    /* background-image: url(https://s3.amazonaws.com/zenplannerwordpress-stack0/wp-content/uploads/sites/309/2019/07/08181919/Blurred-of-fitness-gym-background-1.jpg); */
 
   }
   
@@ -207,6 +50,8 @@
     position: relative;
     transition: transform 200ms;
     transition: 200ms;
+    min-width:30%;
+    height: 100%;
   }
   .card:before, .card:after {
     content: "";
@@ -220,7 +65,7 @@
     background-image: var(--img);
   }
   .card:after {
-    background: var(--clr);
+    background-color: cadetblue;
     opacity: 0;
     mix-blend-mode: multiply;
     transition: opacity 300ms;
@@ -258,9 +103,12 @@
   .cards:hover .card {
     filter: grayscale(1);
   }
-  
+  .card:hover h1{
+    color: cornsilk;
+  }
   .card:hover {
     filter: blur(0) !important;
+    
   }
   .card:hover ~ .card {
     --y: 10%;
@@ -285,9 +133,9 @@
   }
   h1{
     text-align: center;
-    margin-left: 10rem;
-    font-size: 5.5rem;
+    margin-left: 8.5rem;
+    font-size: 4rem;
     margin-top: 5.5rem;
-    font-family: 'Fuggles', cursive;
+    font-family: 'Yomogi', cursive;
     color: black;
   }
