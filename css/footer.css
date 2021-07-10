@@ -1,5 +1,8 @@
 footer{
-    background-color: grey;
-    height:8rem;
+    background-color: rgb(26 26 26);
     text-align: center;
+}
+
+#logofooter img {
+    width: 200px;
 }
