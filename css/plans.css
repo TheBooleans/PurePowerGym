@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Yomogi&display=swap');
+#background1 {
+    background-image: url(https://image.freepik.com/free-photo/healthy-lifestyle-food-sport-concept-white-wooden-background_53476-3742.jpg);
+    background-size: cover;
+    height: 58rem;
+    width: 105%;
+    filter: brightness(0.6);
+    z-index: -1;
+    background-repeat: no-repeat;
+    margin-left: -3rem;
+}
+#p1 {
+    position: absolute;
+    font-size: xx-large;
+    /* width: 34%; */
+    top: 50%;
+    left: 24%;
+    color: white;
+    font-family: 'Yomogi', cursive;
+    font-size: 10rem;
+    
+}
+
+   body {
+    
+    color: #fff;
+    
+    background-image: url(https://i.pinimg.com/564x/a4/96/7a/a4967a1cdba89df8d32804ea250d7250.jpg) ;
+      
+   }
+  #part1{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    margin: 4% 0;
+    
+  }
+
+  .cards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+
+  }
+  
+  .card {
+    padding-top: 10em;
+    max-width: 400px;
+    position: relative;
+    transition: transform 200ms;
+    transition: 200ms;
+    min-width:30%;
+    height: 100%;
+  }
+  .card:before, .card:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    z-index: -1;
+  }
+  .card:before {
+    transition: transform 300ms;
+    background-image: var(--img);
+  }
+  .card:after {
+    background-color: cadetblue;
+    opacity: 0;
+    mix-blend-mode: multiply;
+    transition: opacity 300ms;
+  }
+  
+  .card-content {
+    overflow: hidden;
+    padding: 1em 1em;
+  }
+  
+  .card-title {
+    padding-bottom: 0.3em;
+    text-transform: capitalize;
+    font-size: 1.6em;
+    font-weight: bold;
+  }
+  
+  .card-text::first-letter {
+    font-size: 1.8em;
+    color: yellow;
+  }
+  
+  .card-title,
+  .card-text {
+    transform: translateY(100px);
+    opacity: 0;
+    transition-property: transform, opacity;
+    transition-duration: 300ms;
+  }
+  
+  .card-title {
+    transition-delay: 200ms;
+  }
+  
+  .cards:hover .card {
+    filter: grayscale(1);
+  }
+  .card:hover h1{
+    color: cornsilk;
+  }
+  .card:hover {
+    filter: blur(0) !important;
+    
+  }
+  .card:hover ~ .card {
+    --y: 10%;
+    transform: translateX(10%) translateY(10%) scale(0.9);
+  }
+  .card:hover:after {
+    opacity: 1;
+  }
+  .card:hover:before {
+    transform: scale(1.1);
+  }
+  .card:hover .card-text,
+  .card:hover .card-title {
+    opacity: 1;
+    transform: none;
+  }
+  .card:hover .card-title {
+    transition-delay: 0;
+  }
+  .card:hover .card-text {
+    transition-delay: 400ms;
+  }
+  h1{
+    text-align: center;
+    margin-left: 8.5rem;
+    font-size: 4rem;
+    margin-top: 5.5rem;
+    font-family: 'Yomogi', cursive;
+    color: black;
+  }
