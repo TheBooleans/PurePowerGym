@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+}
+
+header {
+    top: 0;
+    display: grid;
+    height: 90px;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+    background-color: rgb(0 0 0 / 70%);
+    filter: drop-shadow(0 3px 8px rgb(54, 121, 165));
+}
+
+
+
+ul#leftUL {
+    display: flex;
+    margin: 0 0;
+    padding: 0 0;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 30%;
+    flex-direction: row;
+    height: inherit;
+}
+
+
+ul#rightUL {
+    display: flex;
+    margin: 0 0;
+    padding: 0 0;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 30%;
+    flex-direction: row;
+    height: inherit;
+}
+img {
+    width: 264px;
+    filter: drop-shadow(1px 3px 3px black);
+}
+
+li.navlist {
+    list-style: none;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: x-large;
+    color: lightgray;
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+li.navlist:hover{
+    background: linear-gradient(to bottom, #26b0cc 0%,#26b0cc 0%,#134a63 0%,#134a63 0%,#207cca 100%,#207cca 100%,#7db9e8 100%);
+    border-right: solid rgba(54, 121, 165, 0.62);
+    border-left: solid rgba(54, 121, 165, 0.62);
+}
+#shadow{
+    position:absolute;
+    background: #131313;
+    opacity: 0.5;
+    height: 100%;
+    width: 100%
+}
+#background{
+    position: relative;
+    background-size: cover;
+    background-image: url("../Image/wallpaperflare.com_wallpaper\(8\).jpg");
+    background-repeat: no-repeat;
+    padding-bottom: 46.5%;
+    z-index: -2;
+    
+}
+#under h2{
+    background-color: yellow;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+h1{
+
+}
