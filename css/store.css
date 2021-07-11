@@ -1,0 +1,22 @@
+h1{
+    text-align: center;
+}
+#first {
+    display:inline-flex;
+    padding: 15px;
+   
+}
+#first div{
+    margin: 2rem;
+}
+#second {
+    display:inline-flex;
+    padding: 15px;
+   
+}
+#second div{
+    margin: 2rem;
+}
+#third{
+    clear: both;
+}
