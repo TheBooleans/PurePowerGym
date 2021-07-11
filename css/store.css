@@ -1,22 +1,35 @@
-h1{
-    text-align: center;
+h2{
+    margin-top: 110px;
+    margin-left: 2.5%;
 }
 #first {
     display:inline-flex;
-    padding: 15px;
+    padding:20px;
+    text-align: center;
    
 }
 #first div{
-    margin: 2rem;
+    margin: 4rem;
+}
+#first img{
+    width: 200px; 
 }
 #second {
     display:inline-flex;
-    padding: 15px;
+    padding: 20px;
+    text-align: center;
    
 }
 #second div{
-    margin: 2rem;
+    margin: 4rem;
+}
+#second img{
+    width: 200px;
 }
 #third{
     clear: both;
+}
+#third img{
+    width: 100%;
+    height: 400px;
 }
