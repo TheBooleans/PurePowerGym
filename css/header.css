@@ -27,7 +27,10 @@ header nav {
     height: inherit;
     
 }
-
+a{
+    text-decoration: none;
+    color: lightgray;
+}
 
 
 ul#leftUL {
