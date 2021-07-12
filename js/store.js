@@ -2,6 +2,7 @@
 
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
+let LocalArray=[];
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
@@ -161,6 +162,10 @@ function ready() {
     var title = shopItem.getElementsByClassName('name')[0].innerText
     var price = shopItem.getElementsByClassName('price')[0].innerText
     var imageSrc = shopItem.getElementsByClassName('src')[0].src
+    let Shopitems=[title,price,imageSrc];
+    LocalArray.push(Shopitems);
+    saveData();
+    getData();
     addItemToCart(title, price, imageSrc)
     updateCartTotal()
   }
@@ -169,6 +174,9 @@ function ready() {
     cartRow.classList.add('cart-row')
     var cartItems = document.getElementsByClassName('cart-items')[0]
     var cartItemNames = cartItems.getElementsByClassName('cart-item-title')
+
+
+    
     for (var i = 0; i < cartItemNames.length; i++) {
         if (cartItemNames[i].innerText == title) {
             alert('This item is already added to the cart')
@@ -189,6 +197,9 @@ function ready() {
     cartItems.append(cartRow)
     cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', removeCartItem)
     cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', quantityChanged)
+  
+  
+
   }
   
   function removeCartItem(event) {
@@ -209,11 +220,9 @@ function ready() {
 
 
 function saveData(){
-  LocalArray=[title,price,imageSrc]
   let DataStringfy=JSON.stringify(LocalArray)
   DataStringfy=DataStringfy+
   localStorage.setItem('ShopCart',DataStringfy)
-  addItemToCart(title, price, imageSrc)
 }
 
 
