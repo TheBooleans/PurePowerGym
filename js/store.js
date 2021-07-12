@@ -3,6 +3,7 @@
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 let GlobalArray = [];
+let Totals=0
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
@@ -143,19 +144,25 @@ function updateCartTotal() {
     total = total + (price * quantity)
   }
   total = Math.round(total * 100) / 100
+  Totals=total
+  console.log(Totals);
+  
+
   document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total
 }
 
 function purchaseClicked() {
-
+  saveData()
   var cartItems = document.getElementsByClassName('cart-items')[0]
-  alert('Thank you for your purchase')
+
   while (cartItems.hasChildNodes()) {
     cartItems.removeChild(cartItems.firstChild)
 
   }
+  saveTotal()
   updateCartTotal()
 }
+
 function addToCartClicked(event) {
   var button = event.target
   var shopItem = button.parentElement
@@ -163,9 +170,8 @@ function addToCartClicked(event) {
   var price = shopItem.getElementsByClassName('price')[0].innerText
   var imageSrc = shopItem.getElementsByClassName('src')[0].src
   let Shopitems = [title, price, imageSrc];
-  let itemIndex = GlobalArray.push(Shopitems) - 1;
-  saveData();
-  getData();
+  let itemIndex = GlobalArray.push(Shopitems) -1;
+  console.log(itemIndex);
   button.removeEventListener('click', addToCartClicked)
   addItemToCart(title, price, imageSrc, itemIndex)
   updateCartTotal()
@@ -175,7 +181,6 @@ function addItemToCart(title, price, imageSrc, itemIndex) {
   cartRow.classList.add('cart-row')
   var cartItems = document.getElementsByClassName('cart-items')[0]
   var cartItemNames = cartItems.getElementsByClassName('cart-item-title')
-
 
 
   for (var i = 0; i < cartItemNames.length; i++) {
@@ -197,9 +202,8 @@ function addItemToCart(title, price, imageSrc, itemIndex) {
   cartRow.innerHTML = cartRowContents
   cartItems.append(cartRow)
 
-  cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', (e) => { removeCartItem(e, itemIndex) })
+  cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', function(event){ removeCartItem(event, itemIndex) })
   cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', quantityChanged)
-
 
 
 }
@@ -210,8 +214,9 @@ function addItemToCart(title, price, imageSrc, itemIndex) {
 //   updateCartTotal()
 // }
 function removeCartItem(event, itemIndex) {
-  var buttonClicked = event.target
   console.log(event);
+  console.log(itemIndex);
+  var buttonClicked = event.target 
   buttonClicked.parentElement.parentElement.remove()
   // let RemoveRow=event.path
   // console.log(RemoveRow);
@@ -240,20 +245,10 @@ function saveData() {
 
 
 
-function getData() {
-  let GettingData = localStorage.getItem('ShopCart')
-  let DataPrase = JSON.parse(GettingData)
-  if (DataPrase !== null) {
-    GlobalArray = DataPrase
-  }
+
+function saveTotal(){
+  localStorage.setItem('Total',Totals)
 }
-
-
-function removeData() {
-  localStorage.removeItem('ShopCart')
-}
-
-
 
 
 

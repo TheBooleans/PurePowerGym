@@ -1,11 +1,27 @@
 /* Dropdown Button */
+@import url('https://fonts.googleapis.com/css2?family=Laila:wght@600&display=swap');
+main {
+  font-family: 'Laila', sans-serif;
+}
+  #backgroundimg1 {
+    background-image: url(https://ufcgymweb.azureedge.net/ufcgym-web/locations/honolulu/Carousel_03_Retail.jpg);
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    background-size: cover;
+    position: fixed;
+    z-index: -1;
+
+}
+
 .dropbtn {
-    background-color: #3498DB;
+    background-image: url(/Image/phoca-cart-r.svg);
     color: white;
     padding: 16px;
     font-size: 16px;
     border: none;
     cursor: pointer;
+    position: fixed;
+
   }
   
   /* Dropdown button on hover & focus */
@@ -49,15 +65,18 @@
 /*  */
 
 
-h2{
+h2 ,h3{
     margin-top: 110px;
     margin-left: 2.5%;
 }
 #first {
-    display:inline-flex;
-    padding:20px;
-    text-align: center;
-   
+  display: inline-flex;
+  padding: 20px;
+  text-align: center;
+  background-color: #000000c9;
+  width: 100%;
+  margin-top: 35%;
+ 
 }
 #first div{
     margin: 4rem;
@@ -66,10 +85,11 @@ h2{
     width: 200px; 
 }
 #second {
-    display:inline-flex;
-    padding: 20px;
-    text-align: center;
-   
+  display: inline-flex;
+  padding: 20px;
+  text-align: center;
+  background-color: #000000c9;
+  width: 100%;
 }
 #second div{
     margin: 4rem;
@@ -83,4 +103,70 @@ h2{
 #third img{
     width: 100%;
     height: 400px;
+}
+main {
+  text-align: center;
+}
+section .items {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 100%;
+  height: 0%;
+  background-color: white;
+  /* background-color: white */
+}
+.price {
+  color: grey;
+  font-size: 22px;
+}
+.items button{
+border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: rgb(43 122 178);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+.items button:hover {
+  opacity: 0.7;
+}
+.name {
+  font-size: 18px;
+}
+#imgsize{
+  height: 220px;
+}
+button#treadmillbtn {
+  margin-top: 8.5%;
+}
+/* button#shakerbottlebtn {
+  margin-top: 31%;
+}
+button#gymbagbtn {
+  margin-top: 82%;
+} */
+button#weightbenchbtn {
+  margin-top: 2%;
+}
+img#gymbagimg {
+  margin-top: 62%;
+}
+h2 ,h3{
+  text-align: left;
+}
+img#shakerbottleimg {
+  margin-top: 18%;
+}
+button#indoorbikebtn {
+  margin-top: -3%;
+}
+button#proteinpowderbtn {
+  margin-top: -17%;
+}
+p{
+  margin-top: 25%;
+  margin-bottom:25% ;
 }
