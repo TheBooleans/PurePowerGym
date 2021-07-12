@@ -150,7 +150,6 @@ function ready() {
     var cartItems = document.getElementsByClassName('cart-items')[0]
     alert('Thank you for your purchase')
     while (cartItems.hasChildNodes()) {
-
         cartItems.removeChild(cartItems.firstChild)
         
     }
@@ -209,7 +208,28 @@ function ready() {
 
 
 
+function saveData(){
+  LocalArray=[title,price,imageSrc]
+  let DataStringfy=JSON.stringify(LocalArray)
+  DataStringfy=DataStringfy+
+  localStorage.setItem('ShopCart',DataStringfy)
+  addItemToCart(title, price, imageSrc)
+}
 
+
+
+function getData(){
+  let GettingData=localStorage.getItem('ShopCart')
+  let DataPrase=JSON.parse(GettingData)
+  if(DataPrase!==null){
+    LocalArray=DataPrase
+}
+}
+
+
+function removeData(){
+  localStorage.removeItem('ShopCart')
+}
 
 
 
