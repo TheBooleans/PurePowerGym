@@ -290,3 +290,20 @@ span.cart-total-price {
 span.cart-item-title {
   padding-left: 4%;
 }
+ul#itemsUl {
+  overflow: scroll;
+  background-color: wheat;
+  width: 37rem;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+    text-align: center;
+    border: outset;
+    border: outset;
+    width: max-content;
+    margin: auto;
+    font-size: 2rem;
+    background-color: hsl(198deg 19% 45%);
+}
