@@ -1,23 +1,52 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
 @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic);
+@import url('https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap');
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+
 body {
-  background: #323c41;
+ background-color: #154058;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-repeat: no-repeat;
+  text-align: center;
+  
+  
+  
+}
+#quot {
+  font-family: 'Zen Tokyo Zoo', cursive;
+  font-size: 100px;
+  margin-top: 5%;
+  color: #1c6fce;
+}
+#boolean{
+  width: 100%;
+  height: 338px;
+  font-family: 'Zen Tokyo Zoo', cursive;
+  position: absolute;
+ color: #1c6fce;
+  margin-bottom: 40%;
+  margin-top: 5%;
+  font-size: 100px;
   
 }
 main {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
+  display: flex;
+  justify-content: space-evenly;
+  /* flex-direction: column; */
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-top: 20%;
 }
 .blog-card {
-  width: 350px;
-  height: 500px;
+  width: 201px;
+  height: 300px;
   /* position: absolute; */
   top: 50%;
   left: 50%;
@@ -26,12 +55,27 @@ main {
   border-radius: 10px;
   box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
   text-align: center;
+  background-repeat: no-repeat;
 }
-#Aseel {
-    margin-right: 5%;
-}
+
 #Aseel .blog-card.spring-fever {
-  background-image: url(/Image/pic.jfif) ;
+  background-image: url(/Image/Aseel.jpg) ;
+  
+}
+#yhyia .blog-card.spring-fever {
+  background-image: url(/Image/Yhyia.jpg) ;
+  
+}
+#Rami .blog-card.spring-fever {
+  background-image: url(/Image/Rami.jpg) ;
+  
+}
+#Hamzeh .blog-card.spring-fever {
+  background-image: url(/Image/hamzeh.jpg) ;
+  
+}
+#Bashar .blog-card.spring-fever {
+  background-image: url(/Image/Bashar.png) ;
   
 }
 .blog-card .color-overlay {
@@ -65,14 +109,32 @@ main {
 .blog-card:hover .color-overlay {
   background: rgba(84, 104, 110, 0.8);
 }
+#Hamzeh .title-content {
+  text-align: left;
+  margin: 45px 0 0 0;
+  position: relative;
+  z-index: 20;
+  width: 100%;
+  top: 200px;
+  left: 18px;
+}
+#Bashar .title-content{
+  text-align: left;
+    margin: 70px 0 0 0;
+    position: relative;
+    z-index: 20;
+    width: 100%;
+    top: 200px;
+    left: 13px;
 
-#Aseel .title-content {
+}
+.title-content {
     text-align: left;
     margin: 70px 0 0 0;
     position: relative;
     z-index: 20;
     width: 100%;
-    top: 373px;
+    top: 200px;
     left: 18px;
 }
 
@@ -84,9 +146,15 @@ h3 {
   font-family: "Roboto", sans-serif;
   margin-bottom: 0;
 }
-
+#Bashar hr {
+  width: 90%;
+  height: 3px;
+  
+  border: 0;
+  background: #D0BB57;
+}
 hr {
-    width: 46%;
+    width: 80%;
     height: 3px;
     
     border: 0;
@@ -108,7 +176,7 @@ hr {
     position: relative;
     bottom: 100px;
     left: 0;
-    top: 192px;
+    top: 110px;
     margin: 0 auto;
     padding: 0 50px;
     color: #DCE3E7;
@@ -153,7 +221,7 @@ section{
    margin-left: 10%;
 
 }
-.upper {
+/* .upper {
     display: flex;
     justify-content: space-between;
 }
@@ -163,4 +231,4 @@ section{
 }
 .middle {
     margin-left: 43%;
-}
+} */
