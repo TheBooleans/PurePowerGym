@@ -1,36 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-footer{
-    background-color: rgb(26 26 26);
+footer {
+    background: url('https://i.ibb.co/j3DGRhm/footer-bg.jpg') top center no-repeat;
+    background-size: cover;
+    padding-bottom: 2rem;
     text-align: center;
-    background-image: url("https://onclickwebdesign.com/wp-content/uploads/trainer-bg.jpg");
-    position: relative;
+    padding: 5% 0 2% 0%;
+}
+
+#footercontainer{
+    max-width: 39%;
+    margin: 0 auto;
 }
 
 #logofooter img {
     width: 200px;
-    filter: drop-shadow(2px 2px 1px black) grayscale(0.6);
+    filter: drop-shadow(2px 1px 2px black);
+    margin-bottom: 3%;
 }
 
 /*  */
-footer nav {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
 ul#FooterNav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 51%;
+
     justify-content: space-evenly;
 }
 
 li.footerList {
     list-style: none;
     font-family: 'Bebas Neue', cursive;
-    filter: drop-shadow(3px 6px 3px black);
+    letter-spacing: 0.5px;
+    word-spacing: 2px;
+
+}  
+
+#FooterNav.footerList a{
+    color: lightgray;
+    width: 50%;
+    
 }
 /*  */
 
@@ -41,33 +50,33 @@ div#Contact2 {
    
 }
 
-#footerIcons1 {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    position: absolute;
-    top: 5px;
-    left: 0%;
-    justify-content: space-between;
-}
-
-#footerIcons2 {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-between;
-    position: absolute;
-    bottom: 5px;
-    left: 0;
-}
-
-#footerIcons1 img, #footerIcons2 img {
-    width: 3%;
-}
-
 /*  */
-#Contact img {
+#Contact {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 13%;
+}
+#Contact i {
     width: 2%;
-    margin: 20px 8px 10px 8px;
+    margin: 20px 8  px 10px 8px;
+    color: lightgray;
+    filter: drop-shadow(2px 4px 8px black);
+}
+
+#Contact a{
+    margin: 0 4%;
+}
+#smallimg {
+    margin: 5% 0;
+}
+#copyrights {
+    color: #fff;
+    opacity: 0.8;
+    font-size: 12px;
+    word-spacing: 2px;
+    margin: 0 0.5rem;
+    letter-spacing: 0.5px;
 }
 

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
 
 
 *{
@@ -94,7 +95,7 @@ div#hero {
     background-size: cover;
     height: 58rem;
     width: 100%;
-    filter: brightness(0.6);
+    filter: brightness(0.8);
     z-index: -1;
     background-repeat: no-repeat;
 }
@@ -167,10 +168,82 @@ h2 {
     margin: 0 0;
 }
 
-
 /* styling Section Three */
 
-section#secThree {
+section#secThree{
+    padding: 6rem 0;
+    font-family: 'Roboto', 'Helvetica', 'Sans-serif';
+    background-color: #212122;
+    text-align: center;
+    line-height: 1.7;
+    font-size: 1rem;
+}
+div#sec3Title{
+    font-size: 2.85rem;
+    letter-spacing: 7px;
+    color: white;
+    margin-bottom: 4rem;
+    padding: 0;
+    font-weight: 500;
+}
+div#sec3container {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    max-width: 58%;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 4rem;
+}
+.part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+.part img{
+    height: 65px;
+    margin-bottom: 2rem;
+}
+.part h1{
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 1.15rem;
+    color: white;
+}
+.part p{
+    color: #7b7b7b;
+    line-height: 2;
+    font-size: 0.95rem;
+    
+}
+#secThree #subbtn{
+    cursor: pointer;
+    background: #233EDE;
+    color: #fff;
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 1.25rem 3rem;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+} 
+
+
+   /*  */
+
+
+
+/* styling Section Four */
+
+section#secFour {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -179,17 +252,16 @@ section#secThree {
     justify-content: center;
 }
 
-div#sec3img {
+div#sec4img {
     width: 100%;
     display: flex;
 }
 
-#sec3img img {
+#sec4img img {
     width: inherit;
-    filter: grayscale(1);
 }
 
-div#sec3paragraphs {
+div#sec4paragraphs {
     position: absolute;
     color: aliceblue;
     width: 60%;
@@ -207,7 +279,7 @@ div#containers{
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    margin: 40px 0;
+    margin: 9% 0;
 }
 
 .container {
@@ -221,6 +293,9 @@ width: 100%;
 height: auto;
 }
 
+#firstimg{
+    width: 23.3%;
+}
 
 .overlay {
 position: absolute;
@@ -247,7 +322,7 @@ height: 100%;
     color: white;
     font-size: 20px;
     position: absolute;
-    top: 50%;
+    top: 65%;
     left: 50%;
     width: 75%;
     transform: translate(-50%, -50%);
@@ -261,7 +336,7 @@ height: 100%;
     display: flex;
     justify-content: center;
     position: absolute;
-    top: 50px;
+    top: 0.5rem;
 }
 
 div.img-container img {

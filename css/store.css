@@ -1,12 +1,86 @@
-h2{
+/* Dropdown Button */
+@import url('https://fonts.googleapis.com/css2?family=Laila:wght@600&display=swap');
+main {
+  font-family: 'Laila', sans-serif;
+}
+  #backgroundimg1 {
+    background-image: url(https://ufcgymweb.azureedge.net/ufcgym-web/locations/honolulu/Carousel_03_Retail.jpg);
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    background-size: cover;
+    position: fixed;
+    z-index: -1;
+
+}
+
+.dropbtn {
+    background-image: url(/Image/phoca-cart-r.svg);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    position: static;
+
+  }
+  
+  div#myDropdown {
+    overflow: scroll;
+    height: 500px;
+    background-color: #000000c9;
+}
+
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    text-decoration: none;
+    width: fit-content;
+    margin-left: 2.3%;
+}
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+
+  button img {
+    width: 25px;
+}
+/*  */
+
+
+h2 ,h3{
     margin-top: 110px;
     margin-left: 2.5%;
 }
 #first {
-    display:inline-flex;
-    padding:20px;
-    text-align: center;
-   
+  display: inline-flex;
+  text-align: center;
+  background-color: #000000c9;
+  width: 100%;
+  margin-top: 35%;
+ 
 }
 #first div{
     margin: 4rem;
@@ -15,10 +89,11 @@ h2{
     width: 200px; 
 }
 #second {
-    display:inline-flex;
-    padding: 20px;
-    text-align: center;
-   
+  display: inline-flex;
+  padding: 20px;
+  text-align: center;
+  background-color: #000000c9;
+  width: 100%;
 }
 #second div{
     margin: 4rem;
@@ -32,4 +107,186 @@ h2{
 #third img{
     width: 100%;
     height: 400px;
+}
+main {
+  text-align: center;
+}
+section .items {
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    text-align: center;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+.price {
+  color: grey;
+  font-size: 22px;
+}
+.items button{
+border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: rgb(43 122 178);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+.items button:hover {
+  opacity: 0.7;
+}
+.name {
+  font-size: 18px;
+}
+#imgsize{
+  height: 220px;
+}
+button#treadmillbtn {
+  margin-top: 8.5%;
+}
+button#shakerbottlebtn {
+  margin-top: 13.1%;
+}
+/* button#gymbagbtn {
+  margin-top: 82%;
+} */
+button#weightbenchbtn {
+  margin-top: 3.5%;
+}
+img#gymbagimg {
+  padding: 63px 0 65px 0;
+}
+h2 ,h3{
+  text-align: left;
+}
+img#shakerbottleimg {
+  margin-top: 18%;
+}
+button#indoorbikebtn {
+  margin-top: 8.5%;
+}
+button#proteinpowderbtn {
+  margin-top: 13%;
+}
+p{
+  margin-top: 25%;
+  margin-bottom:25% ;
+}
+button#powertowerbtn{
+  margin-top: 2.5%;
+}
+#veganbrain{
+  margin-top: 18.3%;
+}
+
+img.src {
+  height: 100%;
+}
+
+div#headers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 84%;
+  margin: 0 auto;
+}
+
+.cart-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: solid;
+}
+.cart-item.cart-column {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-direction: row;
+  margin: 8px;
+  width: 35%;
+}
+}
+/* span.cart-item-title {
+  width: 40%;
+  margin-left: 12px;
+} */
+span.cart-item-title {
+  padding-left: 7%;
+}
+input.cart-quantity-input {
+  border-radius: 30px;
+  width: 20%;
+  min-height: 1.5rem;
+  text-align: center;
+  margin: 0  0%;
+  border: none;
+}
+.cart-quantity.cart-column {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+section.container.content-section {
+  font-family: 'Laila', sans-serif;
+  color: white;
+}
+
+#headers #item{
+  width: auto;
+}
+span.cart-quantity.cart-header.cart-column {
+  padding-right: 7%;
+}
+
+span.cart-price.cart-header.cart-column {
+  padding-left: 9%;
+}
+button.btn.btn-danger {
+  border-radius: 5px;
+  padding: 4%  7%;
+  transition: transform 0.3s ease;
+  background-color: rgb(43 122 178);
+  color: white;
+  cursor: pointer;
+  font-family: 'Lato', sans-serif;
+  border: 1.5px solid;
+}
+
+button.btn.btn-danger:hover{
+  background-color: rgb(43 122 178 0%);
+  transform: scale(0.98);
+}
+button.purchasebtn {
+  border-radius: 5px;
+  padding: 2%  7%;
+  transition: transform 0.3s ease;
+  background-color: rgb(43 122 178);
+  color: white;
+  cursor: pointer;
+  font-family: 'Lato', sans-serif;
+  border: 1.5px solid;
+}
+button.purchasebtn :hover{
+  background-color: rgb(43 122 178 0%);
+  transform: scale(0.98);
+}
+.cart-total {
+  margin: 0% auto;
+  width: 94%;
+  padding-top: 3%;
+  font-size: 22px;
+}
+span.cart-total-price {
+  padding-left: 15px;
+}
+span.cart-item-title {
+  padding-left: 4%;
 }
