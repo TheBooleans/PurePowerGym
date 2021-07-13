@@ -16,12 +16,12 @@ function calculations(event) {
     const height = Number(event.target.userheight.value);
     let BMI = ((weight / (height * height)) * 10000).toFixed(1);
 
-    function createlink(linkExtension){
-        let planlink = document.createElement('a')
-        TextResult.appendChild(planlink)
-        planlink.setAttribute('href',`${linkExtension}`)
-        planlink.textContent='Plan section'
-        }
+    // function createlink(linkExtension){
+    //     let planlink = document.createElement('a')
+    //     TextResult.appendChild(planlink)
+    //     planlink.setAttribute('href',`${linkExtension}`)
+    //     planlink.textContent='Plan section'
+    //     }
 
     // const result=document.getElementById('result');
     // const text=document.createElement('div');
@@ -38,16 +38,16 @@ function calculations(event) {
     
 
     if (BMI < 18.5) {
-        TextResult.textContent = 'Your Body mass index shows that you are Underweight  we recommand you to follow Plan A from our plan section below to be in your best shape.    '
-        createlink('/pages/plans.html')
+        TextResult.innerHTML = '<p>Your Body mass index shows that you are Underweight  we recommand you  to follow Plan A from our plan section below to be in your best shape.    </p>  <a href="/pages/plans.html">Plan section</a>'
+        
     } else if (BMI >= 18.5 && BMI < 25) {
-        TextResult.textContent = 'Your Body mass index shows that your weight is normal we recommand you to follow Plan B from our plan section below to maintain your weight.      '
-        createlink('/pages/plans.html')
+        TextResult.innerHTML = '<p>Your Body mass index shows that your weight is normal we recommand you to follow Plan B from our plan section below to maintain your weight.      </p> <a href="/pages/plans.html">Plan section</a>'
+        
     } else if (BMI >= 25) {
-        TextResult.textContent = 'Your Body mass index shows that you are Overweight we recommand you to follow Plan C from our plan section below to be in your best shape.        '
-        createlink('/pages/plans.html')
+        TextResult.innerHTML = '<p>Your Body mass index shows that you are Overweight we recommand you to follow Plan C from our plan section below to be in your best shape.        </p>  <a href="/pages/plans.html">Plan section</a>'
+
     } else {
-        TextResult.textConten = 'Wrong inputs, please input your Weight in kg and your Height in cm in the inputs'
+        TextResult.innerHTML = '<p>Wrong inputs, please input your Weight in kg and your Height in cm in the inputs <p>'
     }
 
 }
