@@ -9,7 +9,7 @@
 
 
 body {
- background-color: #154058;
+ background-color: #212122;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -22,17 +22,18 @@ body {
 #quot {
   font-family: 'Zen Tokyo Zoo', cursive;
   font-size: 100px;
-  margin-top: 5%;
-  color: #1c6fce;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  color: lightgrey;
 }
 #boolean{
   width: 100%;
   height: 338px;
   font-family: 'Zen Tokyo Zoo', cursive;
   position: absolute;
- color: #1c6fce;
-  margin-bottom: 40%;
-  margin-top: 5%;
+ color: lightgrey;
+  margin-bottom: 50%;
+
   font-size: 100px;
   
 }
@@ -42,7 +43,7 @@ main {
   /* flex-direction: column; */
   align-items: center;
   flex-wrap: nowrap;
-  margin-top: 20%;
+  margin-top: 30%;
 }
 .blog-card {
   width: 201px;
