@@ -7,7 +7,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/order.css">
-
 </head>
 <body>
     <header>
@@ -15,45 +14,43 @@
             <ul id="leftUL">
                 <li class=navlist><a href="/index.html">HOME</a></li>
                 <li class=navlist><a href="#">ABOUT US</a></li>
-                <li class=navlist><a href="/pages/store.html">STORE</a></li>
+                <li class=navlist><a href="store.html">STORE</a></li>
             </ul>
             <a href="/index.html"><img src="https://i.ibb.co/7VNtPp0/color-logo-transparent.png" alt="" id="logoimg"></a>
             <ul id="rightUL">
-                <li class=navlist><a href="/pages/Subscriptions.html">SUBSCRIPTION</a></li>
-                <li class=navlist><a href="/pages/plans.html">PLANS</a></li>
-                <li class=navlist><a href="/pages/BMI.html">BODY MASS INDEX</a></li>
-
+                <li class=navlist><a href="Subscriptions.html">SUBSCRIPTION</a></li>
+                <li class=navlist><a href="plans.html">PLANS</a></li>
+                <li class=navlist><a href="BMI.html">BODY MASS INDEX</a></li>
             </ul>
-            
         </nav>
     </header>
     <section id="order">
         product order form 
     </section>
     <section id="form">
+        <div id='list'></div>
         <form>
-            <label for="fname" >First name:          </label>
-            <input type="text" id="fname" class="name"  name="fname"  placeholder="          your first name " required >
+            <label for="fname" >First name:</label>
+            <input type="text" id="fname" class="name"  name="fname"  placeholder=" your first name " required ><br>
             <label for="lname" >Last name:</label>
-            <input type="text" id="lname"  class="name" name="lname" placeholder="           your last name"
-            required><br>
+            <input type="text" id="lname"  class="name" name="lname" placeholder=" your last name " required><br>
             <label for="Email">Email :</label>
-            <input type="email" name="Email" id="email" placeholder="         your email" required  ><br>
+            <input type="email" name="Email" id="email" placeholder="your email" required  ><br>
             <label for="phone" >Phone number :</label>
-            <input type="number" name="phone" id="phone" placeholder="        07**********" required ><br>
+            <input type="number" name="phone" id="phone" placeholder="  07**********" required ><br>
             <label for="country" >Country :</label>
-            <input type="text" id="country" required class="place"  placeholder="            your country"><br>
+            <input type="text" id="country" required class="place"  placeholder=" your country"><br>
             <label for="country" >City :</label>
-            <input type="text" id="city" required class="place" placeholder="              your city"><br>
+            <input type="text" id="city" required class="place" placeholder=" your city"><br>
             <label for="cridet" >Cridet card number :</label>
-            <input type="number" required name="cridet" id="cridet" placeholder="5342-****-****-****">
+            <input type="number" required name="cridet" id="cridet" placeholder="5342-****-****-****"><br>
             <label for="cridet" >CVC number:</label>
             <input type="password" required name="cvc number" placeholder="***" id="cvc"><br>
-            <label for="submit"  class="submit"></label>
-            <input type="submit" value="submit" id="submit">
+            <!-- <label for="submit"  class="submit"></label>
+            <input type="submit" value="submit" id="submit"> -->
           </form>
-          <div id='list'></div>
+         <button id="submit">Submit</button>
     </section>
-    <script src="/js/order.js"></script>
+    <script src="../js/order.js"></script>
 </body>
 </html>

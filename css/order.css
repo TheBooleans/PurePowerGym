@@ -1,110 +1,86 @@
 *{box-sizing: border-box;}
 body{
-    /* background-image: url(https://www.moneycrashers.com/wp-content/uploads/2018/03/things-always-buy-online.jpg); */
-    background-size:cover;
+  /*background-image: url(https://i.pinimg.com/originals/d0/65/3d/d0653d3cb4946de275487375e72ec1dc.jpg); 
+    background-size:cover;*/
 }
-#order{
-
-    margin-top: 6.5rem;
-    border-width:10px;
-    padding: 10px;
-    padding-bottom:60px;
-    font-size: 2.5rem;
+#order {
+    padding: 0.5%;
+    padding-bottom: 3%;
+    font-size: 2.1rem;
     height: 1.1rem;
-    width: 34rem ;
+    width: 22%;
     text-align: center;
-    color: #056a96;
-    margin-left: 34rem;
-    margin-bottom: 1rem;
-    margin-right: 36rem;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    border-style: ridge;
-    border-collapse: collapse;
-    border-radius:  20px;
-    background-color:rgba(49, 96, 158, 0.747);
-    color: rgb(25, 25, 53);
-    border-color: rgba(129, 215, 226, 0.74);
-   
-    
+    color: #242c2f;
+    margin-left: 17.1%;    
+     margin-bottom: 10;
+    margin-top: 1.5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(92 123 136);
+    color: rgb(10 10 10);
 }
-form{
-    height: 500px;;
+ 
+ form {
+    height: fit-content;
     padding: 10px;
-    background-color: #1d6483d2   ;
-    font-size:larger;
-    color:#21282c    ;
-    margin-left: 7rem;
-    margin-right: 7rem;
-    
-    border: outset;
-    border-color: powderblue;
-    border-radius: 70px;
-     
-    
-
+    background-color: #5c7b88;
+    font-size: medium;
+    color: #21282c;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    display: flex;
+    width: 48%;
+    flex-direction: column;
+    justify-content: space-around;
+     align-content: space-around;
 }
-input{
-    border:inset;
-    border: inset;
-    border-radius: 15px;
-    border-color:lightskyblue  ;
-    background-color:#e9eef0    ;
+input {
+    background-color: #e9eef0;
+    font-size: inherit;
+    block-size: 1.7rem;
+}
+ form label {
+    font-size: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+}
+ 
+#submit {
+    background-color: rgb(193, 193, 193);
+    font-size: 1.7rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 25%;
+    border-block: revert;
+    width: fit-content;
+}
+#list{
+   float: right;
+   width: 43%;
+   margin: auto;
+   padding-top: 15px;
+}
+ #list img{
+height: 70px;
+} 
 
+#itemsUl li{
+    display:inline-flex;
+    align-items: center;
+}
+ul#itemsUl {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    border-style: groove;
+    background-color: black;
+}
+#itemsUl li img, #itemsUl li h2, #itemsUl li h3 {
     margin: 15px;
-    font-size: x-large;
-    block-size: 50px;
-
-    
-    
-
+    color: white;
 }
-
-
-label{
-    font-size:2.2rem;
-    padding-right: 3rem;
-    padding-left: 3rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    margin: 15px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: bolder , 
-    
-    
-    
-; 
+h1 {
+    border-style: outset;
+    width: max-content;
+    margin: auto;
+    background-color: black;
+    color: white;
 }
-#fname{
-    margin-left: 4.3rem;
-}
-#email{
-    width:35rem;
-    margin-left: 8.2rem;
-}
-#phone{
-    width: 15rem;
-    margin-left: -.1rem;
-}
-#country{
-    margin-left: 6.5rem;
-}
-#city{
-    margin-left: 10.2rem;
-}
-#cridet{
-    margin-left: -3.8rem;
-}
-#cvc{width:5rem ;}
-
-.submit{
-    padding-left: 35rem;
-    
-}
-#submit{
-    background-color:#428baa ;
-    font-size: 2.3rem;
-    width: 10rem;
-    font-family:Arial, Helvetica, sans-serif ;
-    }
-    
-    
