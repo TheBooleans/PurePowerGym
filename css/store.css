@@ -142,14 +142,14 @@ border: none;
 button#treadmillbtn {
   margin-top: 8.5%;
 }
-/* button#shakerbottlebtn {
-  margin-top: 31%;
+button#shakerbottlebtn {
+  margin-top: 13.1%;
 }
-button#gymbagbtn {
+/* button#gymbagbtn {
   margin-top: 82%;
 } */
 button#weightbenchbtn {
-  margin-top: 2%;
+  margin-top: 3.5%;
 }
 img#gymbagimg {
   margin-top: 62%;
@@ -161,12 +161,19 @@ img#shakerbottleimg {
   margin-top: 18%;
 }
 button#indoorbikebtn {
-  margin-top: -3%;
+  margin-top: 8.5%;
 }
 button#proteinpowderbtn {
-  margin-top: -17%;
+  margin-top: 13%;
 }
 p{
   margin-top: 25%;
   margin-bottom:25% ;
 }
+button#powertowerbtn{
+  margin-top: 2.5%;
+}
+#veganbrain{
+  margin-top: 18.3%;
+}
+
