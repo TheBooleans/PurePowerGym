@@ -9,20 +9,21 @@ body {
     background-size: cover;
     font-family: 'Cairo', sans-serif;
 }
-#center{
+#center {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
+  margin: 0 auto;
+  width: 61%;
 }
 .bodymassindex {
   display: flex;
-  width: 26rem;
+  width: 40rem;
   height: 53rem;
   border-radius: 40px;
   background-color: #000000a9;
   margin-top: 10%;
-  margin-left: 30%;
+  margin-left: 0px;
   margin-bottom: 4%;
   padding: 3.5rem 2rem 2rem 2rem;
   box-shadow: 0.81rem 0.81rem 22px #222121e8,

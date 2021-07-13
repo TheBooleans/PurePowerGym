@@ -27,6 +27,7 @@ main {
   div#myDropdown {
     overflow: scroll;
     height: 500px;
+    background-color: #000000c9;
 }
 
   /* Dropdown button on hover & focus */
@@ -52,11 +53,9 @@ main {
   
   /* Links inside the dropdown */
   .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
     text-decoration: none;
-    display: block;
-  }
+    width: fit-content;
+}
   
   /* Change color of dropdown links on hover */
   .dropdown-content a:hover {background-color: #ddd}
@@ -187,3 +186,107 @@ img.src {
   height: 100%;
 }
 
+div#headers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 84%;
+  margin: 0 auto;
+}
+
+.cart-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: solid;
+}
+.cart-item.cart-column {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-direction: row;
+  margin: 8px;
+  width: 35%;
+}
+}
+/* span.cart-item-title {
+  width: 40%;
+  margin-left: 12px;
+} */
+span.cart-item-title {
+  padding-left: 7%;
+}
+input.cart-quantity-input {
+  border-radius: 30px;
+  width: 20%;
+  min-height: 1.5rem;
+  text-align: center;
+  margin: 0  0%;
+  border: none;
+}
+.cart-quantity.cart-column {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+section.container.content-section {
+  font-family: 'Laila', sans-serif;
+  color: white;
+}
+
+#headers #item{
+  width: auto;
+}
+span.cart-quantity.cart-header.cart-column {
+  padding-right: 7%;
+}
+
+span.cart-price.cart-header.cart-column {
+  padding-left: 9%;
+}
+button.btn.btn-danger {
+  border-radius: 5px;
+  padding: 4%  7%;
+  transition: transform 0.3s ease;
+  background-color: rgb(43 122 178);
+  color: white;
+  cursor: pointer;
+  font-family: 'Lato', sans-serif;
+  border: 1.5px solid;
+}
+
+button.btn.btn-danger:hover{
+  background-color: rgb(43 122 178 0%);
+  transform: scale(0.98);
+}
+button.purchasebtn {
+  border-radius: 5px;
+  padding: 2%  7%;
+  transition: transform 0.3s ease;
+  background-color: rgb(43 122 178);
+  color: white;
+  cursor: pointer;
+  font-family: 'Lato', sans-serif;
+  border: 1.5px solid;
+  margin-left: 2.5%;
+}
+button.purchasebtn :hover{
+  background-color: rgb(43 122 178 0%);
+  transform: scale(0.98);
+}
+.cart-total {
+  margin: 0% auto;
+  width: 94%;
+  padding-top: 3%;
+  font-size: 22px;
+}
+span.cart-total-price {
+  padding-left: 15px;
+}
+span.cart-item-title {
+  padding-left: 4%;
+}
