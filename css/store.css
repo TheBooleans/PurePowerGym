@@ -55,6 +55,7 @@ main {
   .dropdown-content a {
     text-decoration: none;
     width: fit-content;
+    margin-left: 2.3%;
 }
   
   /* Change color of dropdown links on hover */
@@ -272,7 +273,6 @@ button.purchasebtn {
   cursor: pointer;
   font-family: 'Lato', sans-serif;
   border: 1.5px solid;
-  margin-left: 2.5%;
 }
 button.purchasebtn :hover{
   background-color: rgb(43 122 178 0%);
