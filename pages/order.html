@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,53 +8,110 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/order.css">
-
+    <link rel="stylesheet" href="../css/footerOthers.css">
 </head>
+
 <body>
-    <header>
+    <header style="background-color: black; border-top: solid white 5px;">
         <nav>
             <ul id="leftUL">
                 <li class=navlist><a href="/index.html">HOME</a></li>
                 <li class=navlist><a href="#">ABOUT US</a></li>
-                <li class=navlist><a href="/pages/store.html">STORE</a></li>
+                <li class=navlist><a href="store.html">STORE</a></li>
             </ul>
-            <a href="/index.html"><img src="https://i.ibb.co/7VNtPp0/color-logo-transparent.png" alt="" id="logoimg"></a>
+            <a href="/index.html"><img src="https://i.ibb.co/7VNtPp0/color-logo-transparent.png" alt=""
+                    id="logoimg"></a>
             <ul id="rightUL">
-                <li class=navlist><a href="/pages/Subscriptions.html">SUBSCRIPTION</a></li>
-                <li class=navlist><a href="/pages/plans.html">PLANS</a></li>
-                <li class=navlist><a href="/pages/BMI.html">BODY MASS INDEX</a></li>
-
+                <li class=navlist><a href="Subscriptions.html">SUBSCRIPTION</a></li>
+                <li class=navlist><a href="plans.html">PLANS</a></li>
+                <li class=navlist><a href="BMI.html">BODY MASS INDEX</a></li>
             </ul>
-            
         </nav>
     </header>
-    <section id="order">
-        product order form 
-    </section>
+
     <section id="form">
+        <h2 id="order">
+            PRODUCT ORDER FORM
+        </h2>
+        <div id='list'></div>
         <form>
-            <label for="fname" >First name:          </label>
-            <input type="text" id="fname" class="name"  name="fname"  placeholder="          your first name " required >
-            <label for="lname" >Last name:</label>
-            <input type="text" id="lname"  class="name" name="lname" placeholder="           your last name"
-            required><br>
-            <label for="Email">Email :</label>
-            <input type="email" name="Email" id="email" placeholder="         your email" required  ><br>
-            <label for="phone" >Phone number :</label>
-            <input type="number" name="phone" id="phone" placeholder="        07**********" required ><br>
-            <label for="country" >Country :</label>
-            <input type="text" id="country" required class="place"  placeholder="            your country"><br>
-            <label for="country" >City :</label>
-            <input type="text" id="city" required class="place" placeholder="              your city"><br>
-            <label for="cridet" >Cridet card number :</label>
-            <input type="number" required name="cridet" id="cridet" placeholder="5342-****-****-****">
-            <label for="cridet" >CVC number:</label>
-            <input type="password" required name="cvc number" placeholder="***" id="cvc"><br>
-            <label for="submit"  class="submit"></label>
-            <input type="submit" value="submit" id="submit">
-          </form>
-          <div id='list'></div>
+            <div id='names' class='spacing'>
+                <label id='firstname' for="fname" class="labels">FIRST NAME:</label>
+                <input type="text" id="fname" class="name inputs input1" name="fname" placeholder=" First Name " required>
+                <label id='lastname' for="lname" class="labels">LAST NAME:</label>
+
+                <input type="text" id="lname" class="name inputs " name="lname" placeholder=" Last Name " required>
+            </div>
+            <div id=emails class='spacing'>
+                <label id='emaillabel' for="Email" class="labels"> EMAIL  :</label>
+                <input class="inputs" type="email" name="Email input1" id="email" placeholder="Your Email" required>
+            </div>
+            <div id='phonecodes' class='spacing'>
+                <label id='phonelabel' for="fphone" class="labels">PHONE NUMBER:</label>
+                <input class="inputs input1" type="number" name="fphone" id="fphone" placeholder="  Area code" required>
+                <input class="inputs input1" type="number" name="lphone" id="lphone" placeholder="  Phone Number" required>
+            </div>
+            <!-- <div id ='testing'> -->
+                <div class='spacing' id='adresses'>
+                <label id='billinglabel' for="billing" class="labels">BILLING ADDRESS:</label>
+                <input class="inputs input1" type="text" name="billing" id="billing" placeholder="  Billing Address" required>
+                <label id='youraddresslabel' for="youraddress" class="text">YOUR ADDRESS:</label>
+                <input class="inputs input1" type="number" name="youraddress" id="youraddress" placeholder="  Your Address"
+                    required>
+                </div>
+            <!-- </div> -->
+            <div id='lives' class='spacing'>
+                <label id='countrylabel' for="country" class="labels">COUNTRY:</label>
+                <input class="inputs input1" type="text" id="country" required class="place" placeholder=" Country">
+                <label id='citylabel' for="city" class="labels">City :</label>
+                <input class="inputs" type="text" id="city" required class="place" placeholder=" City">
+            </div>
+            <div class='spacing' id='cridetcard'>
+                <label id='cridetlabel' for="cridet" class="labels">CRIDET CARD:</label>
+                <input class="inputs input1" type="number" required name="cridet" id="cridet" placeholder="Cridet Card Number">
+                <label id='cvclabel' for="cridet" class="labels">CVC NUMBER:</label>
+                <input class="inputs" type="password" required name="Zip Code" placeholder="Zip Code" id="Cvc Number">
+            </div>
+            <!-- <label for="submit"  class="submit"></label>
+            <input type="submit" value="submit" id="submit"> -->
+            <button id="submit">SUBMIT</button>
+        </form>
+
     </section>
-    <script src="/js/order.js"></script>
+    <footer style="background-color: black; border-top: solid white 5px;">
+        <div id=footercontainer>
+            <span id="logofooter">
+                <img src="https://i.ibb.co/rmbsgYD/Small-Logo.png" alt="">
+            </span>
+            <nav>
+                <ul id="FooterNav">
+                    <li class=footerList><a href="index.html">HOME</a></li>
+                    <li class=footerList><a href="#">ABOUT US</a></li>
+                    <li class=footerList><a href="pages/store.html">STORE</a></li>
+
+                    <li class=footerList><a href="#">SUBSCRIPTION</a></li>
+                    <li class=footerList><a href="pages/plans.html">PLANS</a></li>
+                    <li class=footerList><a href="pages/BMI.html">BODY MASS INDEX</a></li>
+
+                </ul>
+
+            </nav>
+
+
+
+            <div id="Contact">
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+            </div>
+            <img src="https://onclickwebdesign.com/wp-content/uploads/footer-icon.png" alt="" id='smallimg'>
+            <div id='copyrights'>Copyright &copy;2021 All right reserved</div>
+        </div>
+    </footer>
+    <script src="../js/order.js"></script>
+    <script src="https://kit.fontawesome.com/16e8f4ad92.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
