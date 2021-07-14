@@ -14,7 +14,7 @@ main {
 }
 
 .dropbtn {
-    background-image: url(/Image/phoca-cart-r.svg);
+    background-image: url('../Image/phoca-cart-r.svg');
     color: white;
     padding: 16px;
     font-size: 16px;
