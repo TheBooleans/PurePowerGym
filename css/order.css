@@ -1,218 +1,235 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lemonada&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Saira:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Saira:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 
 *{box-sizing: border-box;}
-body {
-    background-image: url('https://i.ibb.co/Mk3N3TF/peakpx.jpg');
-    background-size: cover;
-}
-/* #order {
-
-    padding: 0.5%;
-    padding-bottom: 3%;
-    font-size: 2.1rem;
-    height: 1.1rem;
-    width: 22%;
-    text-align: center;
-    color: #242C2F;
-    margin-left: 17.1%;    
-     margin-bottom: 10;
-    margin-top: 1.5%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgb(92 123 136);
-    color: rgb(10 10 10);
-}  */
-form {
-    height: fit-content;
-    padding: 10px;
-    background-color: #000000d1;
-    color: #21282C;
-    margin-left: 2rem;
-    display: flex;
-    width: 54%;
-    border-radius: 11px;
-    margin-bottom: 4%;
-    border: 5px solid white;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 11%;
-}
-input {
-    font-family: 'Kalam', cursive;
-    border: 2px solid white;
-    font-size: inherit;
-    background: none;
-}
- form label {
-    font-size: 1.5rem;
-    font-family: 'Electrolize', sans-ser;
-    font-weight: bolder;
-    color: white;
-}
-#submit {
-    /* background-color: rgb(193, 193, 193); */
-    font-size: 1.4rem;
-    font-family: 'Saira', sans-serif;
-    margin-left: 61%;
-    padding: 1% 9%;
-    border-block: revert;
-    width: fit-content;
-    background-color: #4C92C3;
-    border: none;
-    box-shadow: 0 0 0 white;
-    color: white;
-    transition: transform 0.3s ease;
-    font-weight: 600;
-    margin-bottom: 3%;
-    margin-top: 2%;
-}
-#submit:hover{
-    background:#25d0fd;
-    transform: scale(0.98);
-}
-#list {
-    float: right;
-    width: 37%;
-    margin-right: 3%;
-    /* margin: auto; */
-    padding-top: 15px;
-    font-family: 'Electrolize', sans-ser;
-    font-size: 13px;
-}
- #list img{
-height: 70px;
-} 
-#itemsUl li {
-    display: inline-flex;
-    align-items: center;
-    border-bottom: white solid 5px;
-    border: groove;
-    margin: 3.5% 0%;
-    margin-right: 6%;
-}
-ul#itemsUl {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    /* border-style: groove; */
-    /* filter: drop-shadow(2px 4px 6px black); */
-    background-color: #000000d1;
-    border-radius: 11px;
-    border: 5px solid white;
-    overflow: scroll;
-    height: 32rem;
-}
-#itemsUl li img, #itemsUl li h2, #itemsUl li h3 {
-    margin: 15px;
-    color: white;
-}
-h1 {
-    /* border-style: outset; */
-    width: max-content;
-    margin: auto;
-    background-color: #000000d1;
-    border-radius: 3px;
-    color: white;
-    padding: 1% 2%;
-    border: white solid 4px;
+body{
+    margin: 0 auto;
+    width: 100%;
 }
 
-/* label#lastname {
-    margin-left: 7%;
-    margin-right: 10%;
-}
-input#fphone {
-    width: 9%;
-}
-input#youraddress {
-    width: 73%;
-}
-input#billing {
-    width: 73%;
-}
-label#firstname {
-    padding-right: 10%;
-    padding-left: 2%;
-}
-label#cvclabel {
-    padding-left: 7%;
-    padding-right: 9.7%;
-}
-label#emaillabel {
-    padding-right: 16%;
-    padding-left: 2%;
-}
-label#phonelabel {
-    padding-right: 4.5%;
-    padding-left: 2%;
-}
-label#billinglabel {
-    padding-right: 3.2%;
-    padding-left: 2%;
-}
-label.text {
-    padding-right: 7.8%;
-    padding-left: 2%;
-}
-label#countrylabel {
-    padding-right: 13%;
-    padding-left: 2%;
-}
-label#citylabel {
-    padding-right: 19.25%;
-    padding-left: 7%;
-}
-label#cridetlabel {
-    padding-right: 9.5%;
-    padding-left: 2%;
-}
-.spacing {
-    margin: 3% 0;
-    color: white;
-} */
-
-input#fphone {
-    width: 15.5%;
-}
-h2#order {
-    padding-left: 20%;
-    margin-top: 4%;
-    margin-bottom: 1%;
-    color: white;
-    font-family: 'Orbitron', sans-serif;
-    letter-spacing: 0px;
-}
-div#names {
+section#form {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
-}
-.spacing {
-    margin-top: 6%;
+    margin: 0 auto;
+    height: auto;
+    align-items: center;
+    position: relative;
+    background-image: url(https://www.webarro.com/ae/wp-content/uploads/2018/06/Win-lost-customers-with-abandoned-cart-recovery-feature_gh.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: revert;
 }
 
-div#lives {
+section#form::after {
+    content: "";
+    background: linear-gradient(
+359deg
+, #001b68, #272727);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 0.5;
+    filter: saturate(0.5);
+    
+}
+
+
+div#formDiv {
+    display: flex;
+    width: 37%;
+    flex-direction: column;
+    margin: 50px 0;
+    z-index: 5;
+    position: relative;
+    right: 1%;
+}
+
+
+
+form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    border: solid 2px;
+    background: linear-gradient( 
+51deg
+ , #0adff2, #0b4572);
+    color: whitesmoke;
+    border-radius: 15px;
+    font-family: 'Noto Sans SC', sans-serif;
+}
+
+form div {
+    width: 110%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 9px 0;
+    flex-direction: row;
+}
+
+label {
+    width: 30%;
+}
+
+select#country, input {
+    width: 27%;
+}
+
+form img {
+    width: 15%;
+}
+
+input#submit {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: x-large;
+    text-align: center;
+    margin: 14px 0px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    background: #00adb5;
+    border: 2px solid #29e7f9;
+    color: #505050;
+    height: 70%;
+    text-transform: uppercase;
+}
+
+input#submit:hover {
+background: linear-gradient( 
+    51deg
+     , #0adff2, #0b4572);
+     color: whitesmoke;
+}
+
+
+fieldset {
+    z-index: 0;
+    margin: 12px 0;
+    border-radius: 6px;
+    border-top: solid 2px whitesmoke;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+legend {
+    text-align: center;
+}
+
+legend h1 {
+    color: whitesmoke;
+    text-transform: uppercase;
+}
+
+input {
+    background: whitesmoke;
+    text-align: center;
+    border: solid 1px #0076b5;
+}
+
+select#country {
+    background: whitesmoke;
+    text-align: center;
+    border: solid 1px #0076b5;
+}
+
+
+/*  */
+/*  */
+
+div#list {
+    width: auto;
+    margin: 0 0;
+    position: relative;
+    right: 2%;
+    z-index: 4;
+    border: solid #8c8c8c 1px;
+    border-radius: 3px;
+    height: 100%;
+}
+
+div#productslist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 258px;
+    background: linear-gradient( 
+9deg
+ , #0ba8b6, #0b4572);
+    box-shadow: inset 7px 3px 12px 0px #2e2e2e;
+    font-family: 'Noto Sans SC', sans-serif;
+}
+
+ul#itemsUl {
     width: 100%;
     display: flex;
-    justify-content: space-between;
-}
-div#cridetcard {
-    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    overflow: overlay;
+    height: 26rem;
+    padding: 0 0;
+    border-bottom: solid 2px #8e8e8e;
 }
 
-div#cridetcard {
-    width: 100%;
+::-webkit-scrollbar{
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: #d6d6d6;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #19a3cc;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(0, 91, 119);
+  }
+
+ul#itemsUl li {
+    width: 50%;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-between;
+    margin: 33px 0;
+    border-bottom: solid 2px whitesmoke;
+    padding: 16px;
+    color: whitesmoke;
 }
 
-div#adresses {
+ul#itemsUl li:last-child{
+    border: none;
+}
+
+ul#itemsUl li h2 {
+    font-size: larger;
+    text-align: center;
+}
+
+ul#itemsUl li img {
+    width: 65%;
+}
+
+div#productslist h1 {
+    color: #dddddd;
+    text-shadow: 0px 1px 3px black;
+    padding: 0 0;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+    text-align: center;
+    text-transform: uppercase;
 }
-
