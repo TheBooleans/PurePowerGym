@@ -38,13 +38,13 @@ function calculations(event) {
     
 
     if (BMI < 18.5) {
-        TextResult.innerHTML = '<p>Your Body mass index shows that you are Underweight  we recommand you  to follow Plan A from our plan section below to be in your best shape.    </p>  <a href="/pages/plans.html">Plan section</a>'
+        TextResult.innerHTML = '<p>Your Body mass index shows that you are Underweight  we recommand you  to follow Plan A from our plan section below to be in your best shape.    </p>  <a href="../pages/plans.html">Plan section</a>'
         
     } else if (BMI >= 18.5 && BMI < 25) {
-        TextResult.innerHTML = '<p>Your Body mass index shows that your weight is normal we recommand you to follow Plan B from our plan section below to maintain your weight.      </p> <a href="/pages/plans.html">Plan section</a>'
+        TextResult.innerHTML = '<p>Your Body mass index shows that your weight is normal we recommand you to follow Plan B from our plan section below to maintain your weight.      </p> <a href="../pages/plans.html">Plan section</a>'
         
     } else if (BMI >= 25) {
-        TextResult.innerHTML = '<p>Your Body mass index shows that you are Overweight we recommand you to follow Plan C from our plan section below to be in your best shape.        </p>  <a href="/pages/plans.html">Plan section</a>'
+        TextResult.innerHTML = '<p>Your Body mass index shows that you are Overweight we recommand you to follow Plan C from our plan section below to be in your best shape.        </p>  <a href="../pages/plans.html">Plan section</a>'
 
     } else {
         TextResult.innerHTML = '<p>Wrong inputs, please input your Weight in kg and your Height in cm in the inputs <p>'
