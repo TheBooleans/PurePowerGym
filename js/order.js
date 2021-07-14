@@ -36,3 +36,6 @@ for (let i = 0; i < listArray.length; i++) {
 let totalprice = document.createElement('h1')
 div.appendChild(totalprice)
 totalprice.textContent = `Total: $${Total}`
+
+
+
