@@ -61,23 +61,23 @@ main {
 }
 
 #Aseel .blog-card.spring-fever {
-  background-image: url(/Image/Aseel.jpg) ;
+  background-image: url(../Image/Aseel.jpg) ;
   
 }
 #yhyia .blog-card.spring-fever {
-  background-image: url(/Image/Yhyia.jpg) ;
+  background-image: url(../Image/Yhyia.jpg) ;
   
 }
 #Rami .blog-card.spring-fever {
-  background-image: url(/Image/Rami.jpg) ;
+  background-image: url(../Image/Rami.jpg) ;
   
 }
 #Hamzeh .blog-card.spring-fever {
-  background-image: url(/Image/hamzeh.jpg) ;
+  background-image: url(../Image/hamzeh.jpg) ;
   
 }
 #Bashar .blog-card.spring-fever {
-  background-image: url(/Image/Bashar.png) ;
+  background-image: url(../Image/Bashar.png) ;
   
 }
 .blog-card .color-overlay {
