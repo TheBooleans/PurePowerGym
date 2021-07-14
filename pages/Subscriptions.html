@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/Subscriptions.css">
+    <link rel="stylesheet" href="../css/footerOthers.css">
 
 
 </head>
@@ -16,23 +17,27 @@
     <header>
         <nav>
             <ul id="leftUL">
-                <li class=navlist><a href="/index.html">HOME</a></li>
-                <li class=navlist><a href="#">ABOUT US</a></li>
-                <li class=navlist><a href="/pages/store.html">STORE</a></li>
+                <li class=navlist><a href="../index.html">HOME</a></li>
+                <li class=navlist><a href="pages/about-us.html">ABOUT US</a></li>
+                <li class=navlist><a href="store.html">STORE</a></li>
             </ul>
             <a href="/index.html"><img src="https://i.ibb.co/7VNtPp0/color-logo-transparent.png" alt=""
                     id="logoimg"></a>
             <ul id="rightUL">
-                <li class=navlist><a href="/pages/Subscriptions.html">SUBSCRIPTION</a></li>
-                <li class=navlist><a href="/pages/plans.html">PLANS</a></li>
-                <li class=navlist><a href="/pages/BMI.html">BODY MASS INDEX</a></li>
-
+                <li class=navlist><a href="Subscriptions.html">SUBSCRIPTION</a></li>
+                <li class=navlist><a href="plans.html">PLANS</a></li>
+                <li class=navlist><a href="BMI.html">BODY MASS INDEX</a></li>
             </ul>
 
         </nav>
     </header>
-
-    <div id='container'>
+    <section>
+        <div class="side" id="leftSide">
+            <img src="https://i.ibb.co/c19HvgG/New-Project.jpg" alt="" class="sidImg">
+            <img src="https://i.ibb.co/NsxZx9p/nathan-dumlao-NXMZxyg-Mw8o-unsplash-1.jpg" alt="" class="sidImg" id="sizeEdit">  
+            <img src="https://i.ibb.co/kmsNZ5X/victor-freitas-q-Z-U9z4-TQ6-A-unsplash-2.jpg" alt="" class="sidImg">
+        </div>
+        <div id='container'>
 
         <input type="radio" name="slider" id='tab1'>
         <input type="radio" name="slider" id='tab2'>
@@ -96,10 +101,52 @@
                     </div>
                 </div>
             </div>
-            <a href="/pages/order.html"><button id=btn>Subscrip Now</button></a>
+            <a href="order.html"><button id=btn>Subscrip Now</button></a>
         </div>
     </div>
-    <script src="https://kit.fontawesome.com/16e8f4ad92.js" crossorigin="anonymous"></script>
+
+    
+    <div class="side" id="rightSide">
+       <img src="https://i.ibb.co/wK0XmMZ/meghan-holmes-bu-Wc-S7-G1-28-unsplash.jpg" alt="" class="sidImg">
+       <img src="https://i.ibb.co/S5X69N6/subtle-cinematics-Fe-Ix-TBB1-Iww-unsplash-1.jpg" alt="" class="sidImg">
+       <img src="https://i.ibb.co/wLfttfV/New-Project-1.jpg" alt="" class="sidImg">
+    </div>
+</section>
+<footer>
+    <div id=footercontainer> 
+    <span id="logofooter">
+        <img src="https://i.ibb.co/rmbsgYD/Small-Logo.png" alt="">
+    </span>
+    <nav>
+        <ul id="FooterNav">
+            <li class=footerList><a href="../index.html">HOME</a></li>
+            <li class=footerList><a href="about-us.html">ABOUT US</a></li>
+            <li class=footerList><a href="store.html">STORE</a></li>
+            
+            <li class=footerList><a href="Subscriptions.html">SUBSCRIPTION</a></li>
+            <li class=footerList><a href="plans.html">PLANS</a></li>
+            <li class=footerList><a href="BMI.html">BODY MASS INDEX</a></li>
+            
+        </ul>
+
+    </nav>
+    
+    
+    
+    <div id="Contact">
+        <a href="#"><i class="fab fa-pinterest"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+    </div>
+    <img src="https://onclickwebdesign.com/wp-content/uploads/footer-icon.png" alt="" id='smallimg'>
+    <div id='copyrights'>Copyright &copy;2021 All right reserved</div>
+    </div>
+</footer>
+
+<script src="https://kit.fontawesome.com/16e8f4ad92.js" crossorigin="anonymous"></script>
+
 </body>
 
 </html>

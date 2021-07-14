@@ -1,38 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head >
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Store</title>
     <link rel="stylesheet" href="../css/store.css">
     <link rel="stylesheet" href="../css/header.css">
+<link rel="stylesheet" href="/css/footerOthers.css">
 
 </head>
 
 <body>
-    <header>
-        <nav>
+    <header style="position: absolute" >
+        <nav >
             <ul id="leftUL">
-                <li class=navlist><a href="/index.html">HOME</a></li>
-                <li class=navlist><a href="#">ABOUT US</a></li>
-                <li class=navlist><a href="/pages/store.html">STORE</a></li>
+                <li class=navlist><a href="../index.html">HOME</a></li>
+                <li class=navlist><a href="pages/about-us.html">ABOUT US</a></li>
+                <li class=navlist><a href="store.html">STORE</a></li>
             </ul>
             <a href="/index.html"><img src="https://i.ibb.co/7VNtPp0/color-logo-transparent.png" alt=""
                     id="logoimg"></a>
             <ul id="rightUL">
-                <li class=navlist><a href="/pages/Subscriptions.html">SUBSCRIPTION</a></li>
-                <li class=navlist><a href="/pages/plans.html">PLANS</a></li>
-                <li class=navlist><a href="/pages/BMI.html">BODY MASS INDEX</a></li>
-
+                <li class=navlist><a href="Subscriptions.html">SUBSCRIPTION</a></li>
+                <li class=navlist><a href="plans.html">PLANS</a></li>
+                <li class=navlist><a href="BMI.html">BODY MASS INDEX</a></li>
             </ul>
 
         </nav>
         <!--  -->
         <!--  -->
         <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn"></button>
+            <button onclick="myFunction()" class="dropbtn" ></button>
             <div id="myDropdown" class="dropdown-content">
               <!-- <h4>My Items</h4>
               <ul id="itemsUL">
@@ -40,30 +40,37 @@
               </ul> -->
               <section class="container content-section">
                 <span class="section-header">CART</span>
-                <div class="cart-row">
-                    <span class="cart-item cart-header cart-column">ITEM</span>
+                <div class="cart-row" id='headers'>
+                    <span class="cart-item cart-header cart-column" id="item">ITEM</span>
                     <span class="cart-price cart-header cart-column">PRICE</span>
                     <span class="cart-quantity cart-header cart-column">QUANTITY</span>
                 </div>
                 <div class="cart-items">
                 </div>
                 <div class="cart-total">
-                    <strong class="cart-total-title">Total</strong>
+                    <strong class="cart-total-title">Total:</strong>
                     <span class="cart-total-price">$0</span>
                 </div>
 
-              <button class=purchasebtn>Purchase</button>
+              <a href="order.html"><button class=purchasebtn>Purchase</button></a>
             </div>
         </div>
         <!--  -->
         <!--  -->
     </header>
+    
+    <div id="backgroundimg1"> 
+                    
+    </div>
     <main>
-        <h2>Machiens</h2>
+        <div id="backgroundimg"> 
+                    
+        </div>
+       
         <section id="first">
-
+            <!-- <h2>Machiens</h2> -->
             <div class="items">
-                <img src="../Image/store/1111.jpg" alt="" class="src">
+                <img src="../Image/store/1111.jpg" alt="" class="src" id="imgsize">
                 <h5 class="name">Power Tower</h5>
                 <h5 class="price"> $120 </h5>
                 <button class="btnshop">
@@ -73,17 +80,17 @@
             <div class="items">
                 <img src="../Image/store/333.jpg"
                     alt="" class="src">
-                <h5 class="name">Indoor Cycling Bike Stationary</h5>
+                <h5 class="name">Indoor <br>Cycling  Bike Stationary</h5>
                 <h5 class="price">$250</h5>
-                <button class="btnshop">
+                <button class="btnshop"  id="indoorbikebtn">
                     Add to cart
                 </button>
             </div>
             <div class="items">
                 <img src="../Image/store/tredmill.jpg" alt="tredmill" class="src">
-                <h5 class="name">Treadmill</h5>
+                <h5 class="name" >Treadmill</h5>
                 <h5 class="price">$185 </h5>
-                <button class="btnshop">
+                <button class="btnshop" id="treadmillbtn">
                     Add to cart
                 </button>
             </div>
@@ -91,14 +98,17 @@
                 <img src="../Image/store/Adjustable Weight Bench.jpg" alt="" class="src">
                 <h5 class="name">Adjustable Weight Bench</h5>
                 <h5 class="price">$80</h5>
-                <button class="btnshop">
+                <button class="btnshop" id="weightbenchbtn" >
                     Add to cart
                 </button>
             </div>
+        </section>
+        <p></p>
         
-        <h3>Others</h3>
-
-
+        
+       
+            <section id='second'>
+                <!-- <h3>Others</h3> -->
             <div class="items">
                 <img src="../Image/store/brain and body.jpg" alt=""width="250px" height="300px"class="src">
                 <h5 class="name">Vegan Brain & Body Boost</h5>
@@ -107,39 +117,70 @@
                     Add to cart
                 </button>
             </div>
-            <div>
-                <img src="../Image/store/why protein.jpg" alt=""class="src">
+            <div class="items">
+                <img src="../Image/store/why protein.jpg" alt=""class="src" >
                 <h5 class="name">Whey Protein Powder</h5>
                 <h5 class=price>$30</h5>
-                <button class="btnshop">
+                <button class="btnshop"id="proteinpowderbtn">
                     Add to cart
                 </button>
             </div>
             <div class="items">
-                <img src="../Image/store/bottle.jpg" alt=""class="src">
+                <img src="../Image/store/bottle.jpg" alt=""class="src" id="shakerbottleimg">
                 <h5 class="name">Shaker Bottle</h5>
                 <h5 class=price>$15</h5>
-                <button class="btnshop">
+                <button class="btnshop" id="shakerbottlebtn">
                     Add to cart
                 </button>
             </div>
             <div class="items">
-                <img src="../Image/store/bag.jpg" alt=""class="src">
+                <img src="../Image/store/bag.jpg" alt=""class="src" id="gymbagimg">
                 <h5 class="name">Gym Bag </h5>
                <h5 class=price>$25 </h5>
-                <button class="btnshop">
+                <button class="btnshop" id="gymbagbtn">
                     Add to cart
                 </button>
             </div>
         </section>
         <section id="third">
-            <img src="https://www.thebasementbuilders.ca/media/images/6_copy_pbhpPbb.2e16d0ba.fill-1600x800.jpg" alt="">
+            <!-- <img src="https://www.thebasementbuilders.ca/media/images/6_copy_pbhpPbb.2e16d0ba.fill-1600x800.jpg" alt=""> -->
         </section>
+         
 
     </main>
-    <footer>
+    <footer style="    background-color: rgb(0 0 0 / 100%);">
+        <div id=footercontainer> 
+        <span id="logofooter">
+            <img src="https://i.ibb.co/rmbsgYD/Small-Logo.png" alt="">
+        </span>
+        <nav>
+            <ul id="FooterNav">
+                <li class=footerList><a href="../index.html">HOME</a></li>
+                <li class=footerList><a href="about-us.html">ABOUT US</a></li>
+                <li class=footerList><a href="store.html">STORE</a></li>
+                
+                <li class=footerList><a href="Subscriptions.html">SUBSCRIPTION</a></li>
+                <li class=footerList><a href="plans.html">PLANS</a></li>
+                <li class=footerList><a href="BMI.html">BODY MASS INDEX</a></li>
+                
+            </ul>
 
+        </nav>
+        
+        
+        
+        <div id="Contact">
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+        </div>
+        <img src="https://onclickwebdesign.com/wp-content/uploads/footer-icon.png" alt="" id='smallimg'>
+        <div id='copyrights'>Copyright &copy;2021 All right reserved</div>
+        </div>
     </footer>
+    <script src="https://kit.fontawesome.com/16e8f4ad92.js" crossorigin="anonymous"></script>
     <script src="../js/store.js"></script>
 </body>
 
